@@ -23,7 +23,7 @@
 <body>
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg  ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,21 +50,52 @@
     </nav>
     <!--Nav Bar End-->
 
+    <!--Hero section-->
     <section>
-        <div class="container-fluid container-hero">
+        <div class="container-fluid hero-container">
             <div class="row">
-                <div class="col col-lg-6 text-center" >
-                    <h2 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                        class="hero-text  mx-auto">This is text</h2>
+                <div class="col-sm-12 col-lg-6 text-center hero-col">
+                    <div class="jumbotron jumbotron-hero">
+                        <h2 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            class="hero-text  mx-auto">This is text</h2>
                         <p>Junior software developer</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nostrum, ipsam assumenda,
+                            perspiciatis eius provident optio sed error odio dolorum sunt accusantium. Assumenda
+                            distinctio excepturi ex, sed quidem soluta veniam.</p>
+                    </div>
+                    <a href="#" type="button" class="button1 text-center">About</a>
+
                 </div>
-                <div class="col col-lg-6">
-                    <img src="media/jim-cece.jpeg" alt="">
+
+                <div class="col-sm-12  col-lg-6 hero-col">
+                    <img class="hero-img" src="media/jim-cece.jpeg" alt="">
                 </div>
             </div>
-
         </div>
     </section>
+    <!--Hero section End-->
+
+
+    <!--Project section -->
+    <section>
+        <div>
+            <h2 class="text-center projetcs-header">My Projects</h2>
+        </div>
+        <div class="container-fluid project-container ">
+            <div class="row">
+                <div class="col justify-content-center d-flex">
+                    <div class="card" >
+                        <img src="media/Index-hero-img.png" class="card-img-top projects-img" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Project section End-->
 
 </body>
 <script>
