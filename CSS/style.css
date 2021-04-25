@@ -7,35 +7,287 @@
 }
 
 body {
- font-family:  serif;   
- 
+    font-family: serif;
+
 }
 
+h2 {
+    font-size: 50px;
+}
+
+/* -------------------------------- Navbar */
+.navbar {
+    background-color: black;
+}
+
+/* -------------------------------- Hero Section */
+.hero-container {
+    background-color: black;
+}
+
+/* -------------------------------- Hero Text Side */
+.hero-text {
+    font-weight: 500;
+    font-family: 'Hind', sans-serif;
+}
+
+
+
+/* -------------------------------- Animated text CSS */
+
+.wrapper {
+ margin-top: 30%;
+ padding: 10%;
+}
+
+.wrapper p {
+    font-family: "Courier";
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    font-size: 4em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper p:nth-child(1) {
+    width: 7ch;
+
+    -webkit-animation: line1 2s steps(20, end);
+    animation: line1 2s steps(20, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;;
+}
+
+
+
+
+.wrapper p:nth-child(2) {
+    width: 7ch;
+    opacity: 0;
+    -webkit-animation: line2 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: line2 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.wrapper p:nth-child(3) {
+    width: 8ch;
+    opacity: 0;
+    -webkit-animation: line3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: line3 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.wrapper p:nth-child(4) {
+    width:11ch;
+    opacity: 0;
+    -webkit-animation: line4 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: line4 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 10s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.wrapper p:nth-child(5) {
+    width:12ch;
+    opacity: 0;
+    -webkit-animation: line5 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: line5 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line1 {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes line1 {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes line2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes line2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes line3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes line3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes line4 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes line4 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+       opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes line5 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes line5 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+.jumbotron-hero {
+    background-color: rgba(192, 204, 216, 0.75);
+}
+
+/* -------------------------------- Hero Image Side */
 .hero-img {
     width: 100%;
     height: auto;
 }
 
-.hero-text {
-    margin-top: 45%;
-    font-weight: 500;
-    font-family: 'Hind', sans-serif;
-}
 
-.hero-container {
-    background-color: black;
-}
-
+/* -------------------------------- Projects */
 .projetcs-header {
     padding: 20px;
-}
-
-.navbar {
-    background-color: black;
-}
-
-.jumbotron-hero {
-    background-color: rgba(192, 204, 216, 0.75);
 }
 
 .projects-img {
@@ -43,6 +295,7 @@ body {
     width: 1005;
     object-fit: cover;
 }
+
 .card {
     width: 75vw;
     height: 75vh;
@@ -77,4 +330,34 @@ a.button1:hover {
         display: block;
         margin: 0.4em auto;
     }
+}
+
+.cta {
+    min-width: 140px;
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 10%;
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a.cta:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.fa-globe {
+    padding: 10px;
+}
+
+.tech-icon-container {
+    padding: 30px;
+}
+
+.project-card {
+    box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
 }
