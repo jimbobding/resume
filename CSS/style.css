@@ -31,13 +31,11 @@ h2 {
     font-family: 'Hind', sans-serif;
 }
 
-
-
 /* -------------------------------- Animated text CSS */
 
 .wrapper {
- margin-top: 30%;
- padding: 10%;
+    margin-top: 10%;
+    padding: 10%;
 }
 
 .wrapper p {
@@ -52,17 +50,21 @@ h2 {
     color: white;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .wrapper p {
+        font-size: 2em;
+    }
+}
+
 .wrapper p:nth-child(1) {
     width: 7ch;
 
     -webkit-animation: line1 2s steps(20, end);
     animation: line1 2s steps(20, end);
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;;
+    animation-fill-mode: forwards;
+    ;
 }
-
-
-
 
 .wrapper p:nth-child(2) {
     width: 7ch;
@@ -87,7 +89,7 @@ h2 {
 }
 
 .wrapper p:nth-child(4) {
-    width:11ch;
+    width: 11ch;
     opacity: 0;
     -webkit-animation: line4 5s steps(20, end), blink .5s step-end infinite alternate;
     animation: line4 2s steps(20, end), blink .5s step-end infinite alternate;
@@ -98,7 +100,7 @@ h2 {
 }
 
 .wrapper p:nth-child(5) {
-    width:12ch;
+    width: 12ch;
     opacity: 0;
     -webkit-animation: line5 5s steps(20, end), blink .5s step-end infinite alternate;
     animation: line5 2s steps(20, end), blink .5s step-end infinite alternate;
@@ -229,7 +231,7 @@ h2 {
     }
 
     100% {
-       opacity: 1;
+        opacity: 1;
         border: none;
     }
 }
@@ -274,31 +276,54 @@ h2 {
     }
 }
 
-.jumbotron-hero {
-    background-color: rgba(192, 204, 216, 0.75);
-}
 
 /* -------------------------------- Hero Image Side */
 .hero-img {
     width: 100%;
-    height: auto;
 }
-
 
 /* -------------------------------- Projects */
 .projetcs-header {
-    padding: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.projects-header, p {
+    text-align: center;
 }
 
 .projects-img {
     height: auto;
-    width: 1005;
+    width: 100%;
     object-fit: cover;
 }
 
 .card {
     width: 75vw;
-    height: 75vh;
+}
+
+.project-blurb,
+.project-tech {
+    display: inline-block;
+    width: 50%;
+    padding: 15px;
+}
+
+.project-tech {
+    float: right;
+}
+
+
+.projects-container .col:nth-child(3n+0){
+    background-color: blue;
+}
+
+.projects-col {
+    padding: 50px;
+}
+
+.projects-card, h3 {
+    text-align: center;
 }
 
 /* -------------------------------- Buttons */
@@ -350,7 +375,7 @@ a.cta:hover {
     background-color: #000000;
 }
 
-.fa-globe {
+.fa-globe, .fa-github {
     padding: 10px;
 }
 
@@ -358,6 +383,26 @@ a.cta:hover {
     padding: 30px;
 }
 
-.project-card {
+.projects-card {
     box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
 }
+
+.github-logo {
+    text-decoration: none;
+    color: black;
+    width: auto;
+    display: inline-block;
+    transition: transform .5s;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+
+.github-logo:hover {
+    transform: scale(1.15);
+    box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+    background-color: white;
+}
+
+
+
