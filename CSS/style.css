@@ -416,21 +416,41 @@ a.cta:hover {
 
 .about-header {
     background-color: gainsboro;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
 .about-col {
     position: relative;
+    background-color: pink;
+    background:    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("/media/person-on-laptop.jpeg") no-repeat center center fixed;
+     background-color: rgba(76, 175, 80, 0.1);
+    background-size: cover; 
+    border: 1px solid black !important;
+    
+}
+
+.about-head {
+    color: white;
 }
 
 
-.about-me {
+.centered-about {
     margin: 0;
-    background: yellow;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+.about-speel {
+    margin: 10px;
+
+  }
+  
+  .about-container {
+      background-color: blanchedalmond;
+  }
