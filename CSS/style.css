@@ -413,3 +413,24 @@ a.cta:hover {
     box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
     background-color: white;
 }
+
+.about-header {
+    background-color: gainsboro;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-col {
+    position: relative;
+}
+
+
+.about-me {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
