@@ -436,10 +436,6 @@ a.cta:hover {
     min-height: 200px;
 }
 
-.about-head {
-    
-}
-
 .centered-about {
     margin: 0;
     position: absolute;
@@ -462,8 +458,8 @@ a.cta:hover {
   }
 
   .about-me-section p {
-      font-size: 30px;
-      color: white;
+    font-size: 30px;
+    color: white;
     border-style: solid;
     padding: .4em .8em;
     line-height: 1;
@@ -474,13 +470,27 @@ a.cta:hover {
 
   @media only screen and (min-device-width: 280px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .about-me-section p {
-        font-size: 20px;
-        color: white;
-      border-style: solid;
-      padding: .4em .8em;
-      line-height: 1;
-      margin-right: 1em; 
-      text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-style: solid;
+    padding: .4em .8em;
+    line-height: 1;
+    margin-right: 1em; 
+    text-decoration: none;
       
     }
+}
+
+.about-container {
+    height: 100vh;
+    position: relative;
+}
+
+.about-p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 10%;
+    font-size: 30px;
+    line-height: 1.5em;
 }
