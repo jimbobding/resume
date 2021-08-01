@@ -523,7 +523,7 @@ a.cta:hover {
 /* -------------------------------- Tech used */
 
 .tech-picture {
-    background: black;
+    background: white;
     height: 250px;
     width: 200px;
     border: 5px;
@@ -681,7 +681,7 @@ button[type="submit"]:hover {
 }
 
 a {
-    color: white
+    color: white;
     text-decoration: none;
 }
 
