@@ -522,6 +522,10 @@ a.cta:hover {
 
 /* -------------------------------- Tech used */
 
+.tech-header {
+    padding: 10px;
+}
+
 .tech-picture {
     background: white;
     height: 250px;
@@ -557,6 +561,7 @@ svg {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
+    padding: 10px;
 }
 
 .overlay:hover {
