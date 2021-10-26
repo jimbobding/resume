@@ -1,1 +1,1 @@
-web: gunicorn resume.wsgi:application
+web: node app.js
