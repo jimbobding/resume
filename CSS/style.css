@@ -23,31 +23,26 @@ h2 {
     text-align: center !important;
 }
 
-.navbar {
-    list-style: none;
-    text-align: center;
-}
 
 .navbar li  a {
-    padding: 5px 20px;
+    
+    padding: 15px 20px;
     color: white;
 }
-
-.nav ul {
-    list-style: none;
-    text-align: center;
- }
  
- .nav ul li {
-    display: inline-block;
- }
-
-
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-    justify-content: center;
-    text-align: center;
+.navbar li  a:hover{
+    font-size: 24px;
+    color: blue;
 }
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .navbar-nav > li:hover {
+      color: burlywood;
+  }
 
 
 /* -------------------------------- Hero Section */
@@ -62,7 +57,6 @@ h2 {
 }
 
 /* -------------------------------- Animated text CSS */
-
 .wrapper {
     margin-top: 10%;
     padding: 10%;
@@ -313,12 +307,12 @@ h2 {
 }
 
 /* -------------------------------- Projects */
-.projetcs-header {
-    padding-top: 20px;
+.section-header {
+    padding-top: 30px;
     text-align: center;
 }
 
-.projects-header,
+.section-header,
 p {
     text-align: center;
 }
@@ -670,9 +664,17 @@ button[type="submit"]:hover {
     width: 100%;
 }
 
-.social-media-list, .quick-links {
+.social-media-list {
     list-style-type: none;
     padding-top: 1rem;
+    display: inline-block;
+
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+    justify-content: center;
 }
 
 .quick-links {
@@ -686,7 +688,7 @@ button[type="submit"]:hover {
 }
 
 a {
-    color: white;
+
     text-decoration: none;
 }
 
@@ -701,6 +703,6 @@ a:hover {
     padding-top: 12px;
 }
 
-hr {
+.social-hr {
     color: white;
 }
